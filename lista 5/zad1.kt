@@ -5,8 +5,9 @@ fun liczby(a: List<Number>) : List<Number> {
 } 
 
 fun main() {
-    val z = liczby(listOf(1,2,3.5,5,-6,1,1))
-    for(i in z) {
-        println(i)
+    val list = liczby(listOf(1,2,3.5,5,-6,1,1))
+    for(i in list) {
+        val num = Math.pow(i.toDouble(),2.0).toInt()
+        println(num)
     }
 }
